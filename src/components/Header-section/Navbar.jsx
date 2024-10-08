@@ -3,6 +3,7 @@ import { FiX } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/Images/logo.png";
 import { useState, useEffect } from "react";
+import Navlink from "./Navlink";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState("");
@@ -92,6 +93,7 @@ const Navbar = () => {
           >
             <FiX className="m-2 text-textWhite" />
           </button>
+          <Navlink to='/'>
           <div className="text-textWhite">
             <div className="px-4 bg-textWhite w-fit rounded-xl">
               <img
@@ -100,6 +102,7 @@ const Navbar = () => {
                 alt="Rentalog-logo"
               />
             </div>
+            </Navlink>
 
             <div className="mt-4 h-[2px] w-600 bg-textWhite rounded-full"></div>
 
